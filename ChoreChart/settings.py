@@ -81,9 +81,11 @@ WSGI_APPLICATION = 'ChoreChart.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'chores',                     
-        'USER': 'postgres',
-        'PASSWORD': 'Jbatch12211995', 
+        'NAME': 'd9lr8r2vasjgqr',                     
+        'USER': 'shckhvkleekhtp',
+        'PASSWORD': 'fea1bb983cc7f82927a4ba7435058b99c353015373aa1e1a705b9ac97094f68f',
+        'HOST': 'ec2-3-213-76-170.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 

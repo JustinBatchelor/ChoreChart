@@ -22,7 +22,7 @@ export default class Landingpage extends Component {
                 .then(result => {
                     this.setState({
                         id: 0,
-                        choreData: result})
+                        choreData: result});
                 })
                 .catch(e => {
                     console.log(e)

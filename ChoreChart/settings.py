@@ -83,9 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'chores',                     
         'USER': 'postgres',
-        'PASSWORD': 'Jbatch12211995',
-        'HOST': 'localhost',                      # Empty for localhost through domain sockets or           '127.0.0.1' for localhost through TCP.
-        'PORT': '',     
+        'PASSWORD': 'Jbatch12211995', 
     }
 }
 

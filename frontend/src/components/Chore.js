@@ -63,6 +63,9 @@ export default class Chore extends Component {
         else if (parseInt(new_date_time[3], 10) === 12) {
             formatTime = new_date_time[3] + ":" + new_date_time[4] + " p.m";
         }
+        else if (parseInt(new_date_time[3], 10) === 0) {
+            formatTime = "12:" + new_date_time[4] + " a.m";
+        }
         else { 
             formatTime = new_date_time[3] + ":" + new_date_time[4] + " a.m";
         }
@@ -84,7 +87,6 @@ export default class Chore extends Component {
                             <Button style={{color: "#19e68a"}} onClick={this.updateChoreTime}>Mark as Clean</Button>
                             <Button color='secondary' onClick={this.deleteChore}>Delete Chore</Button>
                         </ButtonGroup>
-                       
                     </CardContent>
                         
                 </Card>

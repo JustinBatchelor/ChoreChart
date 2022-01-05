@@ -47,21 +47,22 @@ export default class Landingpage extends Component {
     
 
     render() {
-        
         return ( 
-            <Grid container spacing={3} justifyContent="center" alignItems="center" alignContent="center">
-                <Grid item xs={12} align="center">
-                    <Container maxWidth="sm" sx={{bgcolor: "#99badd"}}>
-                        <Typography component='div' variant='h5' align="center">Chore List</Typography>
+            <Grid container direction="row" spacing={3} justifyContent="center" alignItems="center" alignContent="center">
+                <Grid item xs={12} align="center" style={{backgroundColor: "#99badd"}}>
+                    <Container maxWidth='sm'>
+                        <Typography variant='h5' align="center" style={{color: "#fff"}}>Chore Chart</Typography>
                     </Container>
                 </Grid>
-
-                <Grid container spacing={3} justifyContent="center" alignItems="center" >
-                    {this.renderTableRows()}
-                    <Grid item xs={12} align="center">
-                        <Button color='primary' variant="contained" to='/create' component={Link}>Create a Chore</Button>
-                    </Grid>
+                {this.renderTableRows()}
+                <Grid item xs={12} align="center">
+                    <Button color='primary' variant="contained" to='/create' component={Link}>Create a Chore</Button>
                 </Grid>
+
+                {/* <Grid container direction="row" spacing={3} justifyContent="center" alignItems="center" >
+                    
+                    
+                </Grid> */}
             </Grid>
         );  
     }
